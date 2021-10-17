@@ -1,0 +1,4 @@
+[13-Oct-2021 08:02:29 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/domundang/public_html/messages.php on line 3
+[13-Oct-2021 08:02:29 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/domundang/public_html/messages.php on line 7
+[13-Oct-2021 08:17:36 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/domundang/public_html/messages.php on line 3
+[13-Oct-2021 08:17:36 UTC] PHP Warning:  mysqli_error() expects parameter 1 to be mysqli, bool given in /home/domundang/public_html/messages.php on line 7

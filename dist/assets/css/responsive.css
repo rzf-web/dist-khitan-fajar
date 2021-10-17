@@ -1,0 +1,393 @@
+@media (max-width: 1199.98px) { 
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width: 991.98px) { 
+  .container {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 767.98px) { 
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* =================== column ======================= */
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+@media (max-width: 767.98px) {
+  .col-4 {
+    width: 100%
+  }
+  .col-md-4 {
+    width: 50%;
+  }
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+@media (max-width: 575.88px) {
+  .col-6 {
+    width: 100%;
+  }
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/* =================== /column ======================= */
+
+/* =================== header ======================= */
+
+@media (max-width: 1176px) {
+  .header__nav-link .fa {
+    margin-right: 4px;
+    font-size: 14px;
+  }
+  .header__nav-link::after  {
+    transform: none;
+    display: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header__nav-list {
+    min-width: 680px;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+    background-color: red;
+  }
+  .header__nav-item {
+    margin: 0 10px 0 0;
+    font-size: 14px;
+    display: inline-block;
+  }
+  .header__nav-item span {
+    display: none;
+  }
+  .header__nav-link .fa {
+    margin-right: 85px;
+    font-size: 24px;
+  }
+  .header__nav-link::after  {
+    transform: none;
+    display: none;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header__nav-link .fa {
+    margin-right: 85px;
+    font-size: 18px;
+  }
+  .header__nav-link::after  {
+    transform: none;
+    display: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header__nav-link .fa {
+    margin-right: 40px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header__nav-link .fa {
+    margin-right: 40px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 440px) {
+  .header__nav-link .fa {
+    margin-right: 28px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 340px) {
+  .header__nav-link .fa {
+    margin-right: 20px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {
+  .header__nav-link .fa {
+    margin-right: 14px;
+    font-size: 16px;
+  }
+}
+/* ================= banner ====================== */
+
+@media (max-width: 1192.98px) {
+  .main-banner__text-wrapper {
+    left: 350px;
+  }
+}
+@media (max-width: 991.98px) {
+  .main-banner__text-wrapper {
+    left: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .main-banner {
+    padding: 180px 0;
+  }
+  .main-banner__text-wrapper {
+    top: 260px;
+    left: 200px;
+  }
+  .main-banner__heading {
+    font-size: 22px
+  }
+  .main-banner__kids-name {
+    font-size: 24px
+  }
+  .main-banner__item {
+    padding: 80px 0;
+  }
+}
+
+@media (max-width: 575.88px) {
+  .main-banner__item {
+    padding: 180px 0 80px;
+  }
+  .main-banner__text-wrapper {
+    left: 60px;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-banner__text-wrapper {
+    left: 80px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-banner__text-wrapper {
+    left: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-banner__item {
+    padding: 180px 0 80px;
+  }
+  .main-banner__text-wrapper {
+    left: 0;
+  }
+}
+
+/* ================= /banner ====================== */
+
+/* =================== our children ======================= */
+@media (max-width: 575.88px) {
+  .our-children__introduction {
+    padding: 0;
+    width: 100%;
+  }
+  .our-children-card__text h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 380px) {
+  .our-children-card__text h2 {
+    font-size: 20px;
+  }
+
+  .our-children-card__text p {
+    font-size: 12px;
+  }
+}
+
+
+/* =================== /our children ======================= */
+
+/* =================== heart shower ======================= */
+@media (max-width: 767.98px) {
+  .heart-shower {
+    padding: 60px 0;
+  }
+  .heart-shower__image {
+    width: 280px;
+    margin: 0 auto 20px;
+    padding: 0;
+  }
+  .heart-shower__image:before,
+  .heart-shower__image:after {
+    display: none;
+  }
+  .heart-shower__text {
+    padding: 40px 16px;
+  }
+  .heart-shower__text-heading {
+    font-size: 26px;
+  }
+  .heart-shower__text-title {
+    font-size: 26px;
+  }
+}
+/* =================== /heart shower ======================= */
+
+/* =================== gallery section ======================= */
+
+@media (max-width: 767.98px) { 
+  .gallery-card {
+    margin: 8px 12px;
+  }
+  .gallery-card__image {
+    overflow: hidden;
+    width: 100%;
+    max-height: 140px;
+  }
+}
+
+/* =================== /gallery section ======================= */
+
+
+/* =================== event section ======================= */
+
+
+
+/* =================== /event section ======================= */
+
+/* =================== location section ======================= */
+@media (max-width: 991.98px) {
+  .location__button {
+    width: 100%;
+  }
+
+  .btn-location {
+    width: 100%;
+  }
+}
+
+/* =================== /location section ======================= */
+
+/* =================== countdown section ======================= */
+
+.countdown-time__item
+.countdown-time__item:last-child {
+  margin: 0;
+  display: inline-block;
+}
+
+@media (max-width: 575.88px) {
+  .countdown-time__item {
+    min-width: 60px;
+    margin: 8px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .countdown-time__item {
+    min-width: 80px;
+    margin: 4px;
+    padding: 12px;
+  }
+  .countdown-time__item:last-child {
+    margin: 0;
+  }
+}
+
+/* =================== /countdown section ======================= */
+
+
+/* ===================  book section ======================= */
+@media (max-width: 575.88px) {
+  .book__form-message {
+    margin: 0 0 20px;
+  }
+  .book__family-message {
+    padding-left: 0;
+    padding: 20px 0;
+  }
+  .book__family-message h6 {
+    font-size: 24px;
+  }
+}
+
+/* =================== /book section ======================= */
+
+/* =================== quran section ======================= */
+.quran {
+  background-image: url(../img/wallpaper/frame.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* =================== /quran section ======================= */
+
+/* =================== footer section ======================= */
+
+@media (max-width: 575.88px) {
+  .footer__nav-item li {
+    margin: 20px 0;
+    display: inline-block;
+    text-align: left;
+  }
+  .footer__nav-item a{
+    text-align: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #5f9e5f;
+    color: #fff;
+    margin: 0 8px;
+  }
+  .footer__copyright {
+    padding: 20px 0;
+  }
+}
+/* =================== /footer section ======================= */

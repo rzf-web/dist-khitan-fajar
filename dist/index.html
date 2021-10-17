@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="refresh" content="900" />
+  <meta http-equiv="X-UA-Compatible" content="IE=9" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,minimal-ui" />
+
+  <!-- primary information-->
+  <title>Home | Undangan Khitan</title>
+  <meta name="description" content="Home | Undangan Khitan" />
+  <meta name="keywords" content="Home, Undangan Khitan" />
+
+  <!-- ie fix for html5 tags-->
+  <!--[if lt IE 9]><script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script><![endif]-->
+
+  <!-- author-->
+  <meta name="author" content="RZF Software" />
+  <meta name="copyright" content="Undangah. All Rights Reserved" />
+
+  <!-- user agent crawler-->
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+  <meta name="googlebot-news" content="index, follow" />
+  <meta name="msnbot" content="index, follow" />
+  <meta name="webcrawlers" content="index, follow" />
+  <meta name="spiders" content="index, follow" />
+
+  <!-- canonical-->
+  <link rel="canonical" href="https://www.undangah.com" />
+
+  <!-- og facebook general-->
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Home | Undangan Khitan" />
+  <meta property="og:description" content="Home | Undangan Khitan" />
+  <meta property="og:url" content="https://www.undangah.com" />
+  <meta property="og:site_name" content="bilik.id" />
+  <meta property="og:image" content="assets/img/default/og-facebook.jpg" />
+  <meta property="og:image:type" content="image/jpeg" />
+
+  <!-- twitter card-->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Home | Undangan Khitan" />
+  <meta name="twitter:description" content="Home | Undangan Khitan" />
+  <meta name="twitter:site" content="@bilik_id" />
+  <meta name="twitter:site:id" content="@bilik_id" />
+  <meta name="twitter:domain" content="bilik.id" />
+  <meta name="twitter:image:src" content="assets/img/default/twitter-card.jpg" />
+  <meta name="twitter:creator" content="@bilik_id" />
+
+  <!-- ============ icon ============-->
+  <!-- web favicon-->
+  <link rel="shortcut icon" href="assets/img/homescreen/favicon.ico" />
+
+  <!-- android add to home screen-->
+  <link rel="manifest" href="assets/js/data/manifest.json" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="theme-color" content="#2f8e4a" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/homescreen/favicon-16x16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/homescreen/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/img/homescreen/favicon-96x96.png" />
+  <link rel="icon" type="image/png" sizes="144x144" href="assets/img/homescreen/android-icon-144x144.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/homescreen/android-icon-192x192.png" />
+
+  <!-- windows microsoft-->
+  <meta name="msapplication-TileColor" content="#2f8e4a" />
+  <meta name="msapplication-TileImage" content="assets/img/homescreen/ms-icon-144x144.png" />
+
+  <!-- apple add to home screen-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#2f8e4a" />
+  <link rel="apple-touch-icon" href="assets/img/homescreen/apple-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/img/homescreen/apple-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/img/homescreen/apple-icon-60x60.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/img/homescreen/apple-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/homescreen/apple-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/img/homescreen/apple-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/img/homescreen/apple-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/img/homescreen/apple-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/homescreen/apple-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/homescreen/apple-icon-180x180.png" />
+  <link rel="apple-touch-startup-image" href="assets/img/homescreen/apple-icon.png" />
+
+  <!-- style-->
+  <link rel="stylesheet" href="assets/css/app.min.css" />
+
+<body class="hold-transition">
+  <!--panel action-->
+<div class="panel-action">
+  <div class="panel-action__wrapper">
+    <ul class="panel-action__list">
+      <li>
+        <audio autoplay="autoplay" loop id="myAudio">
+          <source src="./assets/audio/assalamualayka-ya-rosulullah.mp3" type="audio/mpeg">
+          <source src="./assets/audio/assalamualayka-ya-rosulullah.mp3" type="audio/ogg">
+        </audio>
+        <button class="btn-audio" type="button" id="toggleAudio" onclick='toggleAudio()'><i class="undangah-play"></i></button>
+      </li>
+      <li>
+        <button class="btn-top js-back-to-top" type="button">
+          <i class="undangah-home"></i>
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--end-panel action-->
+  <!--header-->
+  <div class="header">
+    <div class="container">
+      <div class="header__content">
+        <ul class="header__nav__list">
+          <li class="header__nav__item">
+            <a class="header__nav__link" href="index.html">
+              <i class="undangah-home"></i>
+              <span class="header__nav__text">Home</span>
+            </a>
+          </li>
+          <li class="header__nav__item">
+            <a class="header__nav__link" href="#anak-kami">
+              <i class="undangah-smile"></i>
+              <span class="header__nav__text">Anak Kami</span>
+            </a>
+          </li>
+          <li class="header__nav__item">
+            <a class="header__nav__link" href="#acara">
+              <i class="undangah-alarm"></i>
+              <span class="header__nav__text">Acara</span>
+            </a>
+          </li>
+          <li class="header__nav__item">
+            <a class="header__nav__link" href="#galeri">
+              <i class="undangah-camera"></i>
+              <span class="header__nav__text">Galeri</span>
+            </a>
+          </li>
+          <li class="header__nav__item">
+            <a class="header__nav__link" href="#buku-tamu">
+              <i class="undangah-book"></i>
+              <span class="header__nav__text">Buku Tamu</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--end-header-->
+</body>
+<div class="main-site main-site--hide js-main-site">
+  <!--hero-banner-->
+  <div class="hero-banner">
+    <div class="hero-banner__txt">
+      <h2 class="hero-banner__title">Undangan Khitan</h2>
+      <p class="hero-banner__desc">Fajar Rizky Ramadhan</p>
+    </div>
+  </div>
+  <!--end-hero-banner-->
+  <!--our-children-->
+  <div class="our-children" id='anak-kami'>
+    <div class="container">
+      <div class="our-children__wrapper">
+        <div class="our-children__txt-caption">
+          <p>Ya Rahman, Ya Rahim. Dengan memohon Ridho dan Rahmat-Mu, Maka izinkanlah kami untuk membimbing buah hati
+            kami menjalankan sunnah Rasul-Mu dalam membentuk pribadi yang sholeh.</p>
+        </div>
+        <div class="our-children__box">
+          <div class="our-children__img">
+            <img class="our-children__img-el" src="assets/img/dummy/our-children.jpg" alt="Anak Kami" />
+          </div>
+          <div class="our-children__txt">
+            <h3 class="our-children__txt-name">Fajar Rizky Ramadhan</h3>
+            <p class="our-children__txt-identity">Anak Pertama dari Yudhi & Erna</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-our-children-->
+  <!--event-->
+  <div class="event" id='acara'>
+    <div class="container">
+      <div class="event__wrapper">
+        <div class="event__boxes">
+          <div class="event__box">
+            <h3 class="text-title">Acara</h3>
+            <p>Assalamualaikum Warahmatullahi Wabarakatuh</p>
+            <p>Dengan mengharap rahmat dan ridho Allah SWT, Kami bermaksud menyelenggarakan Tasyakuran Khitan putera
+              kami, yang Insya Allah akan dilaksanakan pada :</p>
+          </div>
+          <div class="event__box__detail">
+            <h3>Kamis - Jum'at, 22-23 Juli 2021</h3>
+            <p>Pukul 08.00 WIB s/d Selesai</p>
+            <p>Bertempat di Blok Pasir Wajar, Dusun Puhun RT. 002 RW. 001, Desa Sakerta Barat, Kecamatan Darma, Kab.
+              Kuningan Jawa Barat. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-event-->
+  <!--galleries-->
+  <div class="galleries" id='galeri'>
+    <div class="galleries__wrapper">
+      <h3 class="text-title galleries__title">Galeri</h3>
+      <!--galleries-item-->
+      <div class="galleries__item">
+        <div class="galleries__item__box">
+          <div class="galleries__item__img">
+            <a class="js-popup-image" href="assets/img/dummy/gallery1.jpg" alt="Fajar Rizky Ramadhan">
+              <img class="galleries__item__img__el" src="assets/img/dummy/gallery1.jpg"
+                alt="Fajar Rizky Ramadhan" /></a>
+          </div>
+        </div>
+      </div>
+      <!--end-galleries-item-->
+      <!--galleries-item-->
+      <div class="galleries__item">
+        <div class="galleries__item__box">
+          <div class="galleries__item__img">
+            <a class="js-popup-image" href="assets/img/dummy/gallery2.jpg" alt="Fajar Rizky Ramadhan">
+              <img class="galleries__item__img__el" src="assets/img/dummy/gallery2.jpg"
+                alt="Fajar Rizky Ramadhan" /></a>
+          </div>
+        </div>
+      </div>
+      <!--end-galleries-item-->
+      <!--galleries-item-->
+      <div class="galleries__item">
+        <div class="galleries__item__box">
+          <div class="galleries__item__img">
+            <a class="js-popup-image" href="assets/img/dummy/gallery3.jpg" alt="Fajar Rizky Ramadhan">
+              <img class="galleries__item__img__el" src="assets/img/dummy/gallery3.jpg"
+                alt="Fajar Rizky Ramadhan" /></a>
+          </div>
+        </div>
+      </div>
+      <!--end-galleries-item-->
+      <!--galleries-item-->
+      <div class="galleries__item">
+        <div class="galleries__item__box">
+          <div class="galleries__item__img">
+            <a class="js-popup-image" href="assets/img/dummy/gallery4.jpg" alt="Fajar Rizky Ramadhan">
+              <img class="galleries__item__img__el" src="assets/img/dummy/gallery4.jpg"
+                alt="Fajar Rizky Ramadhan" /></a>
+          </div>
+        </div>
+      </div>
+      <!--end-galleries-item-->
+      <!--galleries-item-->
+      <div class="galleries__item">
+        <div class="galleries__item__box">
+          <div class="galleries__item__img">
+            <a class="js-popup-image" href="assets/img/dummy/gallery5.jpg" alt="Fajar Rizky Ramadhan">
+              <img class="galleries__item__img__el" src="assets/img/dummy/gallery5.jpg"
+                alt="Fajar Rizky Ramadhan" /></a>
+          </div>
+        </div>
+      </div>
+      <!--end-galleries-item-->
+      <!--galleries-item-->
+      <div class="galleries__item">
+        <div class="galleries__item__box">
+          <div class="galleries__item__img">
+            <a class="js-popup-image" href="assets/img/dummy/gallery6.jpg" alt="Fajar Rizky Ramadhan">
+              <img class="galleries__item__img__el" src="assets/img/dummy/gallery6.jpg"
+                alt="Fajar Rizky Ramadhan" /></a>
+          </div>
+        </div>
+      </div>
+      <!--end-galleries-item-->
+    </div>
+  </div>
+  <!--end-galleries-->
+  <!--also-invite-->
+  <div class="also-invite" id='also-invite'>
+    <div class="container">
+      <div class="also-invite__wrapper">
+        <h3 class="text-title also-invite__title">Turut Mengundang :</h3>
+        <ul class="also-invite__list">
+          <li class="also-invite__list__item">1. H. Ridwan Fauzi, Kepala Desa Sakerta Barat.</li>
+          <li class="also-invite__list__item">2. Drs. H. Asyikin Hidayat, Ketua Yayasan Pondok Pesantren Salafiyah Plus
+            Arrifurohmah</li>
+          <li class="also-invite__list__item">3. Hj. Sri Hartini, S.Pd, SE Kepala Sekolah SMK Jagara</li>
+          <li class="also-invite__list__item">4. Agus Hermawan, Sakerta Barat</li>
+          <li class="also-invite__list__item">5. Segenap Family</li>
+        </ul>
+        <div class="also-invite__video">
+          <video class="also-invite__video-el" controls="" autoplay="" muted="">
+            <source src="assets/video/video-konveksi.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-also-invite-->
+  <!--habib-->
+  <div class="habib" id='habib'>
+    <div class="container">
+      <div class="habib__wrapper">
+        <div class="habib__img">
+          <img class="habib__img__el" src="assets/img/dummy/habib-abdurrahman-bin-ahmad-al-jufri.png"
+            alt="Habib Abdurrahman bin Ahmad Al-jufri" />
+        </div>
+        <div class="habib__txt">
+          <h3 class="habib__txt-title"></h3>
+          <h3 class="habib__txt-name"></h3>
+          <p class="habib__txt-quotes">
+          <ul class="habib__txt__list">
+            <h3>Siraman Qalbu bersama</h3>
+            <h3>Al Habib Abdurrrahman bin Ahmad Al-Jufri</h3>
+            <p>"Tidak perlu mematikan cahaya orang lain untuk membuat dirimu bercahaya, pribadi yang baik akan bercahaya di manapun berada."</p>
+            <li class="habib__txt__list__item">Hari : Kamis malam Jum'at</li>
+            <li class="habib__txt__list__item">Tanggal : 18 November 2021 (3 Rabi'ul Akhir 1442 H)</li>
+            <li class="habib__txt__list__item">Waktu : 21.00 WIB s/d selesai</li>
+            <li class="habib__txt__list__item">Alamat : Blok Pasir Wajar, Dusun Puhun RT. 002 RW. 001, Desa Sakerta
+              Barat, Kec. Darma, Kab. Kuningan Jawa Barat.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-habib-->
+  <!--countdown-->
+  <div class="countdown">
+    <div class="container">
+      <div class="countdown__wrapper">
+        <ul class="countdown__list js-countdown-set">
+          <li class="countdown__list__item">
+            <p class="countdown__list__number">20</p>
+            <p class="countdown__list__txt">Hari</p>
+          </li>
+          <li class="countdown__list__item">
+            <p class="countdown__list__number">10</p>
+            <p class="countdown__list__txt">Jam</p>
+          </li>
+          <li class="countdown__list__item">
+            <p class="countdown__list__number">10</p>
+            <p class="countdown__list__txt">Menit</p>
+          </li>
+          <li class="countdown__list__item">
+            <p class="countdown__list__number">10</p>
+            <p class="countdown__list__txt">Detik</p>
+          </li>
+        </ul>
+        <div class="countdown__txt">
+          <h3 class="countdown__txt__title">Catat tanggalnya yaa..</h3>
+          <p class="countdown__txt__desc">Tiada kesan yang paling indah tanpa kehadiran teman-teman semua.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-countdown-->
+  <!--location-->
+  <div class="location" id='location'>
+    <div class="container">
+      <div class="location__wrapper">
+        <h3 class="text-title location__title">Lokasi</h3>
+        <div class="location__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1016.0052671781909!2d108.40409579848256!3d-7.039215731201895!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDInMjEuMCJTIDEwOMKwMjQnMTUuMCJF!5e0!3m2!1sid!2sid!4v1634328068160!5m2!1sid!2sid"></iframe>
+        </div>
+        <div class="location__row">
+          <a class="btn btn--primary btn--block btn--location"
+            href="https://www.google.com/maps/place/7%C2%B002'21.0%22S+108%C2%B024'15.0%22E/@-7.0392157,108.4040958,18.96z/data=!4m5!3m4!1s0x0:0x0!8m2!3d-7.0391664!4d108.4041549?hl=id" target="_blank">Lihat
+            Peta Lebih Besar
+            <i class="undangah-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-location-->
+  <!--quran-->
+  <div class="quran" id='quran'>
+    <div class="container">
+      <div class="quran__txt">
+        <p>Dan sesungguhnya telah Kami berikan nikmat kepada Luqman, yaitu: "Bersyukurlah kepada Allah. Dan barangsiapa
+          yang bersyukur (kepada Allah), maka sesungguhnya ia bersyukur untuk dirinya sendiri. Dan barangsiapa yang
+          tidak bersyukur, maka sesungguhnya Allah Maha Kaya lagi Maha Terpuji."</p>
+        <h3 strong>QS. Luqman [31] : 23</h3>
+      </div>
+    </div>
+  </div>
+  <!--end-quran-->
+  <!--guest-book-->
+  <div class="guest-book" id='buku-tamu'>
+    <div class="container">
+      <div class="guest-book__wrapper">
+        <h3 class="text-title guest-book__title">Buku Tamu</h3>
+        <p class="guest-book__greeting">Berikan Ucapan Untuk Anak Kami!</p>
+        <div class="guest-book__form">
+          <form action="#" method="POST" autocomplete="off">
+            <div class="guest-book__form__row">
+              <input class="guest-book__form__input js-input-name" type="text" name="nama" id="name"
+                placeholder="Masukkan Nama Anda" data-target="alertName" autocomplete="off" />
+              <p class="form__alert" id="alertName" data-req="Nama tidak boleh kosong!"></p>
+            </div>
+            <div class="guest-book__form__row">
+              <textarea class="message__box js-input-message" name="message" id="message"
+                placeholder="Masukkan Pesan Anda" rows="5" data-target="alertMessage" autocomplete="off"></textarea>
+              <p class="form__alert" id="alertMessage" data-req="Pesan tidak boleh kosong!"></p>
+            </div>
+            <div class="guest-book__form__row">
+              <button class="btn btn--primary btn--block js-button-message" type="submit">
+                <i class="undangah-paper-plane"></i>
+                Kirim</button>
+            </div>
+          </form>
+          <div class="guest-book__result">
+            <div class="guest-book__result__box js-result-comment">
+              <div class="guest-book__result__media">
+                <div class="guest-book__result__img">
+                  <img class="guest-book__result__img__el" src="assets/img/dummy/user.png" alt="User" />
+                </div>
+                <div class="guest-book__result__comment"><span>12 Oktober 2021</span>
+                  <h6>Dendi Budiansyah</h6>
+                  <p>Wahh.. selamat berbahagia ya..</p>
+                </div>
+              </div>
+              <div class="guest-book__result__media">
+                <div class="guest-book__result__img">
+                  <img class="guest-book__result__img__el" src="assets/img/dummy/user.png" alt="User" />
+                </div>
+                <div class="guest-book__result__comment"><span>14 Oktober 2021</span>
+                  <h6>Dede Nopitasari</h6>
+                  <p>Sehat selalu</p>
+                </div>
+              </div>
+              <div class="guest-book__result__media">
+                <div class="guest-book__result__img">
+                  <img class="guest-book__result__img__el" src="assets/img/dummy/user.png" alt="User" />
+                </div>
+                <div class="guest-book__result__comment"><span>12 Oktober 2021</span>
+                  <h6>Sandi</h6>
+                  <p>Semoga Panjang Umur</p>
+                </div>
+              </div>
+              <div class="guest-book__result__media">
+                <div class="guest-book__result__img">
+                  <img class="guest-book__result__img__el" src="assets/img/dummy/user.png" alt="User" />
+                </div>
+                <div class="guest-book__result__comment"><span>14 Oktober 2021</span>
+                  <h6>Erwan Hermawan</h6>
+                  <p>Dimudahkan rezekinya</p>
+                </div>
+              </div>
+              <div class="guest-book__result__media">
+                <div class="guest-book__result__img">
+                  <img class="guest-book__result__img__el" src="assets/img/dummy/user.png" alt="User" />
+                </div>
+                <div class="guest-book__result__comment"><span>12 Oktober 2021</span>
+                  <h6>Alpin</h6>
+                  <p>Bahagia dunia dan akhirat</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="guest-book__txt">
+          <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga apabila Bapak/Ibu/Saudara/i berkenan hadir
+            dan memberikan doa kepada putera kami. Atas kesediaan kehadirannya, kami ucapkan terima kasih.</p>
+          <p>Wassalamualaikum Warahmatullahi Wabarakatuh</p>
+          <p>Kami yang berbahagia :</p>
+          <h6>Yudhi Heriyadi, S.Kom</h6>
+          <h6>Ernawati</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-guest-book-->
+  <!--footer-->
+  <div class="footer">
+    <div class="container">
+      <div class="footer__wrapper">
+        <div class="footer__copyright">
+          <p class="footer__copyright__text"> Copyright 2021 Undangah. All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end-footer-->
+</div>
+
+
+<!-- script-->
+<script src="assets/js/vendor.min.js"></script>
+<script src="assets/js/app.min.js"></script>
+
+</head>
+
+</html>
