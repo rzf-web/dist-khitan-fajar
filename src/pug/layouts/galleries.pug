@@ -1,0 +1,46 @@
+//-------------------------------------------------------------------------------
+  @name: Galleries
+  -------------------------------------------------------------------------------//
+
+-
+  dataGalleries = {
+    title: 'Galeri',
+    list: [
+      {
+        img: 'gallery1.jpg',
+        title: 'Fajar Rizky Ramadhan'
+      },
+      {
+        img: 'gallery2.jpg',
+        title: 'Fajar Rizky Ramadhan'
+      },
+      {
+        img: 'gallery3.jpg',
+        title: 'Fajar Rizky Ramadhan'
+      },
+      {
+        img: 'gallery4.jpg',
+        title: 'Fajar Rizky Ramadhan'
+      },
+      {
+        img: 'gallery5.jpg',
+        title: 'Fajar Rizky Ramadhan'
+      },
+      {
+        img: 'gallery6.jpg',
+        title: 'Fajar Rizky Ramadhan'
+      },
+    ]
+  }
+
+//galleries
+.galleries
+  .galleries__wrapper
+    h3.text-title.galleries__title
+      | !{dataGalleries.title}
+    each val in dataGalleries.list
+      -
+        data = val
+      include ../components/galleries.pug
+='\n'
+//end-galleries

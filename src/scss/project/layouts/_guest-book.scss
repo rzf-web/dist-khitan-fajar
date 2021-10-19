@@ -1,0 +1,123 @@
+/* ==========================================================================
+  Layout: Guest Book
+========================================================================== */
+
+.guest-book {
+  padding: 64px 0;
+  overflow: hidden;
+  @include large {
+    padding: 56px 0;
+  }
+  @include medium {
+    padding: 48px 0;
+  }
+  @include small {
+    padding: 32px 0;
+  }
+  @include retina {
+    padding: 30px 0;
+  }
+  &__wrapper {
+    @include clearfix;
+  }
+  &__form {
+    float: left;
+    width: 50%;
+    @include extra-small {
+      width: 100%;
+    }
+    &__input {
+      width: 100%;
+      padding: 16px 8px;
+      border-radius: 4px;
+      height: 40px;
+      background-color: color(white);
+      @include font-size(body);
+      border: solid 2px color(grey, 2);
+      outline: none;
+      transition: all 350ms ease;
+      &:focus {
+        border-color: color(primary);
+      }
+    }
+    .message__box {
+      resize: vertical;
+      width: 100%;
+      outline: 0;
+      border: solid 2px #ccc;
+      border-radius: 4px;
+      padding: 16px 8px;
+      background-color: #fff;
+      color: #222;
+      padding: 8px;
+      @include font-size(body);
+      transition: all .3s linear;
+      &:focus {
+        border-color: color(primary);
+      }
+    }
+  }
+
+  &__result {
+    &__box {
+      margin: 24px 0;
+      border-radius: 4px;
+      background-color: color(white);
+      position: relative;
+      max-height: 240px;
+      @include scroll('y', 'touch', 'hide');
+      border-color: #f8f9fa;
+      padding: 12px 24px;
+    }
+    &__media {
+      @include clearfix;
+      padding: 16px 0;
+    }
+    &__img {
+      &__el {
+        display: block;
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &__comment {
+      float: left;
+      width: 100%;
+      padding: 12px 0;
+      border-bottom: solid 1px #ced4da;
+      span {
+        float: right;
+        @include font-size(lable);
+        @include extra-small {
+          @include font-size(small);
+          padding: 4px 0;
+        }
+        @include retina {
+          float: none;
+        }
+      }
+      h6 {
+        @include font-size(body);
+        margin-bottom: 8px;
+        @include extra-small {
+          white-space: nowrap;
+        }
+      }
+      p {
+        margin: 0;
+      }
+    }
+  }
+  &__txt {
+    float: left;
+    width: 50%;
+    padding-left: 24px;
+    @include extra-small {
+      width: 100%;
+      padding: 24px 0 0;
+    }
+    h6 {
+      @include font-size(h3);
+    }
+  }
+}

@@ -1,0 +1,16 @@
+//-------------------------------------------------------------------------------
+  @name: Banner Blog
+  -------------------------------------------------------------------------------//
+
+//example
+.item
+  .item__box
+    .item__img
+      img.item__img__el(src='assets/img/dummy/'+data.img alt=data.title)/
+    .item__text
+      h4.item__title
+        | !{data.title}
+      p.item__desc
+        | !{data.desc}
+='\n'
+//end-example

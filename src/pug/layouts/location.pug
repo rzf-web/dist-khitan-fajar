@@ -1,0 +1,28 @@
+//-------------------------------------------------------------------------------
+  @name: Location
+  -------------------------------------------------------------------------------//
+
+-
+  dataLocation = {
+    title: 'Lokasi',
+    desc: 'Blok Pasir Wajar, Dusun Puhun RT. 002 RW. 001, Desa Sakerta Barat, Kecamatan Darma, Kab. Kuningan Jawa Barat.',
+    mapSrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31678.37477300009!2d108.38964259412693!3d-7.033148248840555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f3fc72a213edb%3A0xb78aa6a914910011!2sSakerta%20Bar.%2C%20Darma%2C%20Kabupaten%20Kuningan%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1622792453122!5m2!1sid!2sid'
+  }
+
+//location
+.location
+  .container
+    .location__wrapper
+      h3.text-title.location__title Lokasi
+      .location__map
+        ='\n'
+        iframe(src=dataLocation.mapSrc)
+        ='\n'
+      .location__row
+        ='\n'
+        a.btn.btn--primary.btn--block.btn--location Lihat Peta Lebih Besar
+          ='\n'
+          i.undangah-arrow-right
+        ='\n'
+='\n'
+//end-location

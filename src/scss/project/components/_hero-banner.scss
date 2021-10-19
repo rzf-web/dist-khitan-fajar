@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Components: Hero Banner
+   ========================================================================== */
+
+.hero-banner {
+  min-height: 760px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image: url(../img/dummy/banner1.jpg);
+  background-size: cover;
+  background-position: top 35% center;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 50%;
+    bottom: -2px;
+    left: 0;
+    display: block;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 9), rgba(255, 255, 255, .4), rgba(255, 255, 255, 0));
+  }
+
+  &__txt {
+    transform: translate(0, 120px);
+    text-align: center;
+  }
+
+  &__title,
+  &__desc {
+    text-transform: uppercase;
+    color: color(black);
+  }
+
+  &__title {
+    font-family: $font-main;
+    @include font-size(h2);
+    font-weight: fw(bold);
+    margin-bottom: 32px;
+    transition: all 1s ease 1s;
+    .main-site--hide & {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    @include small {
+      @include font-size(h2);
+    }
+    @include extra-small {
+      @include font-size(h3);
+      margin-bottom: 16px;
+    }
+  }
+
+  &__desc {
+    @include font-size(h1);
+    font-weight: fw(regular);
+    font-family: 'Bangers';
+    margin: 0;
+    transition: all 1s ease 1.25s;
+    .main-site--hide & {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  }
+  &__btn {
+    transition: all 3s ease 1.5s;
+    .main-site--hide & {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  }
+}

@@ -1,0 +1,37 @@
+//-------------------------------------------------------------------------------
+  @name: Habib
+  -------------------------------------------------------------------------------//
+
+
+-
+  dataHabib = {
+    img: 'habib-abdurrahman-bin-ahmad-al-jufri.png',
+    alt: 'Habib Abdurrahman bin Ahmad Al-jufri',
+    title: 'Siraman Qalbu bersama',
+    name: 'Al Habib Abdurrrahman bin Ahmad Al-Jufri',
+    quotes: 'Tidak perlu mematikan cahaya orang lain untuk membuat dirimu bercahaya, pribadi yang baik akan bercahaya di manapun berada.',
+  }
+
+//habib
+.habib
+  .container
+    .habib__wrapper
+      .habib__img
+        ='\n'
+        img.habib__img__el(src='assets/img/dummy/'+dataHabib.img alt=dataHabib.alt)/
+        ='\n'
+      .habib__txt
+        h3.habib__txt-title
+        h3.habib__txt-name
+        p.habib__txt-quotes
+          ul.habib__txt__list
+            h3 !{dataHabib.title}
+            h3 !{dataHabib.name}
+            p !{dataHabib.quotes}
+            li.habib__txt__list__item Hari : Kamis malam Jum'at
+            li.habib__txt__list__item Tanggal : 22 Juli 2021 (12 Dzulhijjah 1442 H)
+            li.habib__txt__list__item Waktu : 21.00 WIB s/d selesai
+            li.habib__txt__list__item Alamat : Blok Pasir Wajar, Dusun Puhun RT. 002 RW. 001, Desa Sakerta Barat, Kec. Darma, Kab. Kuningan Jawa Barat.
+
+='\n'
+//end-habib

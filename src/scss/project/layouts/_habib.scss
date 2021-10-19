@@ -1,0 +1,74 @@
+/* ==========================================================================
+  Layout: Habib
+========================================================================== */
+
+.habib {
+  padding: 64px 0;
+  @include large {
+    padding: 56px 0;
+  }
+  @include medium {
+    padding: 40px 0;
+  }
+  @include small {
+    padding: 32px 0;
+  }
+  @include retina {
+    padding: 30px 0;
+  }
+  &__wrapper {
+    @include clearfix;
+  }
+  &__img {
+    float: left;
+    width: 40%;
+    position: relative;
+    @include small {
+      width: 100%;
+    }
+    &__el {
+      margin: 0 auto;
+    }
+    &::before {
+      content: '';
+      background: url(../img/bg/dots.png);
+      z-index: zi(habib-img-before);
+      position: absolute;
+      top: -100px;
+      width: 180px;
+      height: 100%;
+      left: -56px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      @include medium {
+        top: -40px;
+      }
+      @include extra-small {
+        display: none;
+      }
+    }
+  }
+  &__txt {
+    float: left;
+    width: 50%;
+    padding-left: 24px;
+    @include small {
+      width: 100%;
+      padding-left: 0;
+    }
+    &__list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      &__item {
+        margin-bottom: 16px;
+        @include small {
+          margin-bottom: 8px;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

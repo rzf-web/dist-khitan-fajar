@@ -1,0 +1,54 @@
+/* ==========================================================================
+  Layout: Header
+========================================================================== */
+
+.header {
+  background-color: color(white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  height: 72px;
+  z-index: zi(header);
+  @include shadow(0);
+  @include extra-small {
+    padding: 14px;
+    height: 48px;
+  }
+  &__content {
+    position: relative;
+  }
+  &__nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  &__nav__item {
+    display: inline-block;
+    margin-right: 24px;
+    &:last-child {
+      margin-right: 0;
+    }
+    @include extra-small {
+      margin-right: 32px;
+    }
+  }
+  &__nav__link {
+    text-decoration: none;
+    transition: all .3s ease;
+    @include remove-tap-highlight;
+    &:hover {
+      color: color(primary);
+    }
+  }
+  i {
+    color: color(primary);
+  }
+  &__nav__text {
+    @include extra-small {
+      display: none;
+    }
+  }
+}

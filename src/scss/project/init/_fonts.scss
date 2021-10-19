@@ -1,0 +1,43 @@
+/* ==========================================================================
+ Init: Fonts
+ ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+@font-face {
+    font-family: 'Bangers';
+    src: url('../fonts/Bangers-Regular.eot');
+    src: url('../fonts/Bangers-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Bangers-Regular.woff2') format('woff2'),
+        url('../fonts/Bangers-Regular.woff') format('woff'),
+        url('../fonts/Bangers-Regular.ttf') format('truetype'),
+        url('../fonts/Bangers-Regular.svg#Bangers-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Ravi Prakash';
+    src: url('../fonts/RaviPrakash-Regular.eot');
+    src: url('../fonts/RaviPrakash-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/RaviPrakash-Regular.woff2') format('woff2'),
+        url('../fonts/RaviPrakash-Regular.woff') format('woff'),
+        url('../fonts/RaviPrakash-Regular.ttf') format('truetype'),
+        url('../fonts/RaviPrakash-Regular.svg#RaviPrakash-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+  font-family: 'undangah-icon';
+  src: url('../fonts/undangah-icon.eot?40vegj');
+  src: url('../fonts/undangah-icon.eot?40vegj#iefix') format('embedded-opentype'),
+    url('../fonts/undangah-icon.ttf?40vegj') format('truetype'),
+    url('../fonts/undangah-icon.woff?40vegj') format('woff'),
+    url('../fonts/undangah-icon.svg?40vegj#undangah-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

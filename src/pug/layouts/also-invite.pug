@@ -1,0 +1,43 @@
+//-------------------------------------------------------------------------------
+  @name: Also Invite
+  -------------------------------------------------------------------------------//
+
+-
+  dataPerson = {
+    title: 'Turut Mengundang :',
+    img: 'also-invite.png',
+    alt: 'Turut Mengundang',
+    list: [
+      {
+        nameItem: '1. H. Ridwan Fauzi, Kepala Desa Sakerta Barat.'
+      },
+      {
+        nameItem: '2. Drs. H. Asyikin Hidayat, Ketua Yayasan Pondok Pesantren Salafiyah Plus Arrifurohmah'
+      },
+      {
+        nameItem: '3. Hj. Sri Hartini, S.Pd, SE Kepala Sekolah SMK Jagara'
+      },
+      {
+        nameItem: '4. Agus Hermawan, Sakerta Barat'
+      },
+      {
+        nameItem: '5. Segenap Family'
+      }
+    ]
+  }
+
+//also-invite
+.also-invite
+  .container
+    .also-invite__wrapper
+      h3.text-title.also-invite__title !{dataPerson.title}
+      ul.also-invite__list
+        each val in dataPerson.list
+          -
+            data = val
+          li.also-invite__list__item
+            | !{val.nameItem}
+      .also-invite__img
+        img.also-invite__img-el(src='assets/img/dummy/'+dataPerson.img alt=dataPerson.alt)/
+='\n'
+//end-also-invite

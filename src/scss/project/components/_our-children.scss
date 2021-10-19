@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Components: Our Children
+   ========================================================================== */
+
+ .our-children {
+  $oc: &;
+  &__box {
+    background-color: color(white);
+    @include shadow(0);
+    width: 420px;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    @include extra-small {
+      width: 100%;
+    }
+    &:hover {
+      #{$oc} {
+        &__box {
+          @include shadow(1);
+        }
+        &__img-el {
+          transform: scale(1.1);
+          overflow: hidden;
+          opacity: 1;
+        }
+        &__txt {
+          &-name {
+            color: color(primary);
+          }
+        }
+      }
+    }
+  }
+  &__img {
+    padding-bottom: 80%;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    @include extra-small {
+      border-radius: 0;
+    }
+    &-el {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: .9; 
+      transition: all .5s ease;
+    }
+  }
+  &__txt {
+    padding: 48px;
+    text-align: center;
+    @include extra-small {
+      padding: 24px;
+    }
+    &-caption {
+      text-align: center;
+      @include font-size(h4);
+      margin-bottom: 48px;
+      @include extra-small {
+        @include font-size(h6);
+      }
+    }
+    &-name {
+      @include font-size(h2);
+      transition: all 350ms ease;
+      @include extra-small {
+       @include font-size(h3);
+      }
+    }
+    &-identity {
+      margin: 0;
+    }
+  }
+}
