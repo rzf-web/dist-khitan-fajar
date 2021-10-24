@@ -2074,7 +2074,7 @@ Layout: Example
 }
 @media only screen and (max-width: 575.86px) {
   .header__nav__item {
-    margin-right: 32px;
+    margin-right: 24px;
   }
 }
 .header__nav__link {
