@@ -2536,12 +2536,17 @@ Layout: Our Children
 }
 @media only screen and (max-width: 575.86px) {
   .countdown__list__item {
-    margin: 0 16px 16px 0;
-    padding: 8px;
-    min-width: 60px;
+    /* margin: 0 16px 16px 0; */
   }
   .countdown__list__item:last-child {
     margin: 0;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .countdown__list__item {
+    margin: 2px 0;
+    padding: 8px;
   }
 }
 .countdown__list__number {
